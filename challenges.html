@@ -39,7 +39,12 @@
 
     <div class="challenge-content">
       <h1>Challenge #1:</h1>
-      <form>
+      <!-- https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit/19454378#:~:text=One%20great%20way%20to%20prevent,false%20with%20your%20onsubmit%20attribute. -->
+
+      <!--https://www.geeksforgeeks.org/how-to-solve-submit-is-not-a-function-error-in-javascript/-->
+
+      <!-- <form onsubmit="submitAnswers();return false"> -->
+      <form onsubmit="submitAnswers();return false">
         <table style="width: 50%;">
           <tr>
             <th>Question</th>
@@ -64,16 +69,11 @@
             </td>
           </tr>
         </table>
-        <input
-          id="challenge-submit1"
-          type="submit"
-          value="Submit"
-          onclick="alert('Thank you for your inquiry!')"
-        />
+        <input id="challenge-submit1" type="button" value="Submit" />
 
         <h1>Results to Challenge #1:</h1>
 
-        <table style="width: 50%;">
+        <table id="challenge-results1">
           <tr>
             <th>Correct Answer</th>
             <th>Your Answer</th>
@@ -81,23 +81,22 @@
           </tr>
           <tr>
             <td>Coding</td>
-            <td>Coding</td>
+            <td>a</td>
             <td>correct</td>
           </tr>
           <tr>
             <td>Problem Solving</td>
-            <td>Problem Solving</td>
+            <td>b</td>
             <td>wrong</td>
           </tr>
           <tr>
             <td>Learning</td>
-            <td>Learning</td>
+            <td>c</td>
             <td>wrong</td>
           </tr>
         </table>
       </form>
     </div>
+    <script type="text/javascript" src="./js/challenges.js"></script>
   </body>
 </html>
-
-Use form for input

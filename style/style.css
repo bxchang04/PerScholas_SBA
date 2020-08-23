@@ -35,27 +35,28 @@ th {
 .menu_item {
   flex: 1;
 }
-#menu_item_nav { /* addition */
-	flex: 2;
+#menu_item_nav {
+  /* addition */
+  flex: 2;
 }
 
 .menu_container .menu_item nav ul {
-	float: right; /* anchors to right. How come justify-items didn't work? */
+  float: right; /* anchors to right. How come justify-items didn't work? */
   display: flex; /* fixed weird flex text issues */
-  text-align: center; 
+  text-align: center;
   align-items: center; /* not working for vertical */
-	justify-items: right;
-	height: 4em;
+  justify-items: right;
+  height: 4em;
 }
 .menu_container .menu_item nav ul li {
-	height: 100%;
+  height: 100%;
 }
 
 .menu_container .menu_item nav ul li a {
   color: white;
   padding: 0.5em 3em;
-	border-radius: 3px;
-	height: 100%;
+  border-radius: 3px;
+  height: 100%;
 }
 
 .menu_container .menu_item nav ul li a:hover {
@@ -125,7 +126,7 @@ th {
 
 /* Contact */
 .main-element {
-	padding: 2em;
+  padding: 2em;
 }
 
 /* Challenges */
@@ -135,22 +136,33 @@ th {
 
 /* The animation code */
 @keyframes shake {
-  0%   {left:0px}
-  50%   {left:40px}
-  100%   {left:0px}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 40px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 /* The element to apply the animation to */
 #contact-img1 {
-  width: 10em; 
+  width: 10em;
   padding: 2em;
   position: relative;
   animation-name: shake;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-direction: normal; 
+  animation-direction: normal;
 }
 
 #challenge-submit1 {
-  margin: 2em
+  margin: 2em;
+}
+
+#challenge-results1 {
+  visibility: hidden;
+  width: 50%;
 }

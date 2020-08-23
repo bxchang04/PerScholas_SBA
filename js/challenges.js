@@ -1,11 +1,20 @@
-/* 
+// add event listener handle to button id challenge-submit1 - submitAnswers
+const submitAnswersBtn = document.getElementById("challenge-submit1");
+submitAnswersBtn.addEventListener("click", submitAnswers);
 
-make table
-make input fields
+const resultsTable1 = document.getElementById("challenge-results1");
+console.log(resultsTable1);
 
-make submit button
+function submitAnswers() {
+  showResults();
+}
 
-onsubmit, reveal answers
+/*
+
+onsubmit,
+  store inputs in array
+  populate results array with input array
+  toggle table's css property display: enabled to show full table
 
 try again button, set values of input fields  and answers to ''
 
@@ -28,3 +37,7 @@ results
 
 */
 
+function showResults() {
+  console.log("showAnswers");
+  resultsTable1.style.visibility = "visible";
+}
