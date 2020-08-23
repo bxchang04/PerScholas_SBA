@@ -1,9 +1,10 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	font-family: Gill Sans, sans-serif;
 }
 
-a {
+h1, a {
 	text-decoration: none;
 }
 
@@ -11,12 +12,12 @@ li {
 	list-style-type: none;
 }
 
+
 /* Menu */
 .menu_container {
 	display: flex;
 	padding: 20px;
 	background-color: #1c1808;
-	font-family: cursive;
 	font-weight: 300;
 	color: white;
 }
@@ -27,11 +28,13 @@ li {
 
 .menu_container .menu_item nav ul {
 	display: flex;
+	text-align: center; /* CSS does not allow for li to change text align due to webkit*/
+	align-items: center;
 }
 
 .menu_container .menu_item nav ul li a {
 	color: white;
-	padding: 21px 37px;
+	padding: 21px 30px;
 	border-radius: 3px;
 }
 
@@ -62,7 +65,8 @@ li {
 .main_content {
 	display: flex;
 	justify-content: center;
-	width: 100%
+	width: 100%;
+	padding: 3em;
 }
 
 .main_content .sub_main {
@@ -73,7 +77,7 @@ li {
 }
 
 .main_content .img {
-	background-color: #a5c5cc;
+	background-color: gray;
 	width: 100%;
 }
 
@@ -86,7 +90,7 @@ li {
 	border: 1px solid black;
 	width: 360px;
 	height: 390px;
-	margin: 10px 0;
+	margin: 3em 3em;
 	border-radius: 5px;
 }
 
