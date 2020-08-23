@@ -3,6 +3,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" type="text/css" href="./style/style.css" />
     <style>
       body {
@@ -38,65 +45,111 @@
     <!-- Nav Bar -->
 
     <div class="challenge-content">
-      <h1>Challenge #1:</h1>
+      <h1>Challenge #1: Answer the following questions</h1>
       <!-- https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit/19454378#:~:text=One%20great%20way%20to%20prevent,false%20with%20your%20onsubmit%20attribute. -->
 
       <!--https://www.geeksforgeeks.org/how-to-solve-submit-is-not-a-function-error-in-javascript/-->
 
       <!-- <form onsubmit="submitAnswers();return false"> -->
       <form onsubmit="submitAnswers();return false">
-        <table style="width: 50%;">
-          <tr>
-            <th>Question</th>
-            <th>Your Answer</th>
-          </tr>
-          <tr>
-            <td>Coding</td>
-            <td>
-              <input placeholder="1" />
-            </td>
-          </tr>
-          <tr>
-            <td>Problem Solving</td>
-            <td>
-              <input placeholder="2" />
-            </td>
-          </tr>
-          <tr>
-            <td>Learning</td>
-            <td>
-              <input placeholder="3" />
-            </td>
-          </tr>
-        </table>
-        <input id="challenge-submit1" type="button" value="Submit" />
-
-        <h1>Results to Challenge #1:</h1>
-
-        <table id="challenge-results1">
-          <tr>
-            <th>Correct Answer</th>
-            <th>Your Answer</th>
-            <th>Result</th>
-          </tr>
-          <tr>
-            <td>Coding</td>
-            <td>a</td>
-            <td>correct</td>
-          </tr>
-          <tr>
-            <td>Problem Solving</td>
-            <td>b</td>
-            <td>wrong</td>
-          </tr>
-          <tr>
-            <td>Learning</td>
-            <td>c</td>
-            <td>wrong</td>
-          </tr>
+        <table class="table table-bordered table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">
+                Questions: According to the home page of this site...
+              </th>
+              <th scope="col">Your Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                ...the first important skill for coders is:
+              </td>
+              <td>
+                <input placeholder="1" />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>...the sercond important skill for coders is:</td>
+              <td>
+                <input placeholder="1" />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>...the third important skill for coders is:</td>
+              <td>
+                <input placeholder="1" />
+              </td>
+            </tr>
+          </tbody>
         </table>
       </form>
+
+      <input id="challenge-submit1" type="button" value="Submit" />
+
+      <div id="challenge-results1">
+        <h2>Results to Challenge #1:</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">
+                Questions: According to the home page of this site...
+              </th>
+              <th scope="col">Your Answer</th>
+              <th scope="col">Correct Answer</th>
+              <th scope="col">Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                ...the first important skill for coders is:
+              </td>
+              <td>1</td>
+              <td>Coding</td>
+              <td>correct</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>...the sercond important skill for coders is:</td>
+              <td>2</td>
+              <td>Problem Solving</td>
+              <td>wrong</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>...the third important skill for coders is:</td>
+              <td>3</td>
+              <td>Learning</td>
+              <td>wrong</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/challenges.js"></script>
   </body>
 </html>

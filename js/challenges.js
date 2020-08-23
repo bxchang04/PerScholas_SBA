@@ -13,10 +13,8 @@ function submitAnswers() {
 
 onsubmit,
   store inputs in array
-  populate results array with input array
-  toggle table's css property display: enabled to show full table
 
-try again button, set values of input fields  and answers to ''
+  use loop to populate results array with input array
 
 
 quiz:

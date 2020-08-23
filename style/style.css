@@ -4,10 +4,6 @@ body {
   font-family: Gill Sans, sans-serif;
 }
 
-body .menu-container {
-  padding-left: 0;
-}
-
 h1,
 a {
   text-decoration: none;
@@ -18,8 +14,9 @@ li {
 }
 
 th {
-  text-align: left;
+  text-align: center;
 }
+
 /* Menu */
 
 .menu_container {
@@ -30,6 +27,7 @@ th {
   background-color: #1c1808;
   font-weight: 300;
   color: white;
+  align-items: center; /* not working for vertical */
 }
 
 .menu_item {
@@ -159,10 +157,11 @@ th {
 }
 
 #challenge-submit1 {
-  margin: 2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 #challenge-results1 {
+  width: 80%;
   visibility: hidden;
-  width: 50%;
 }
