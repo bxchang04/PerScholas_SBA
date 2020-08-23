@@ -1,24 +1,26 @@
-// add event listener handle to button id challenge-submit1 - submitAnswers
 const submitAnswersBtn = document.getElementById("challenge-submit1");
 submitAnswersBtn.addEventListener("click", submitAnswers);
 
 const resultsTable1 = document.getElementById("challenge-results1");
 
-function submitAnswers() {
-  // showResults();
+function submitAnswers(answer1, answer2, answer3) {
+  let answers = [answer1, answer2, answer3];
+
+  for (let i = 1; i <= 3; i++) {
+    let ele = document.getElementById(`chal-ans-res${i}`);
+    ele.innerHTML = answers[i - 1];
+
+    let correctAnswer = document.getElementById(`chal-cor-ans${i}`);
+    console.log(correctAnswer.innerHTML);
+
+    let userAnswer = document.getElementById(`chal-ans-score${i}`);
+    userAnswer.innerHTML = answers[i - 1] === correctAnswer.innerHTML;
+  }
+
+  showResults();
 }
 
-/*
-
-onsubmit,
-  store inputs in array
-
-  use loop to populate results array with input array
-
-*/
-
 function showResults() {
-  // console.log("showAnswers");
   resultsTable1.style.visibility = "visible";
 }
 
@@ -34,23 +36,23 @@ function main_validator(e) {
   e.preventDefault();
   ele.innerHTML = "";
 
-  console.log(e.target[0].value);
-  console.log(e.target[1].value);
-  console.log(e.target[2].value);
+  let a1 = e.target[0].value;
+  let a2 = e.target[1].value;
+  let a3 = e.target[2].value;
   if (
     check_answer(e.target[0].value) &&
     check_answer(e.target[1].value) &&
     check_answer(e.target[2].value)
   ) {
     // element.submit();
-    showResults();
+    submitAnswers(a1, a2, a3);
   }
 }
 function check_answer(answer) {
   var re = new RegExp(/^[a-zA-Z0-9_.-]*$/g);
   var message = "";
   var someWrong = false;
-  console.log(re.test(answer));
+  // console.log(re.test(answer));
 
   // if (!re.test(answer)) {
   //   message += "Answer(s) can only be [a-z], [A-Z], or (-,_)";
