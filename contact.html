@@ -9,8 +9,8 @@
 	</head>
   <body>
     <img
-      class="contact_img"
-      style="width: 10em; padding: 2em;"
+      id="contact-img1"
+      class="contact_img contact-element"
       src="https://media.giphy.com/media/MEjG5NXKKS68LvGIP2/giphy.gif"
     />
 
@@ -27,14 +27,12 @@
         <textarea rows="4" cols="50" placeholder="(Maximum 150 characters)"></textarea>
       </div>
       <div class="contact-element">
-        <button id="contact-form-submit1" type="test" value="test" onclick="promptTY(e)">Submit</button>
+         <input type="submit" value="Submit" onclick="alert('Thank you for your inquiry!')">
 
       </div>
     </form>
 
-    <div id="contact-footer">GIF courtesy of Giphy.com</div>
+    <div class="contact-element">GIF courtesy of Giphy.com</div>
     <script type="text/javascript" src="./js/contact.js"></script>
   </body>
 </html>
-
-internal CSS dropdown regex add a GIF here (opt. add animation)

@@ -119,7 +119,20 @@ li {
 	padding: 1em;
 }
 
-#contact-footer {
-	padding: 2em;
-	font-size: 12pt;
+/* The animation code */
+@keyframes shake {
+  0%   {left:0px}
+  50%   {left:40px}
+  100%   {left:0px}
+}
+
+/* The element to apply the animation to */
+#contact-img1 {
+  width: 10em; 
+  padding: 2em;
+  position: relative;
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal; 
 }
