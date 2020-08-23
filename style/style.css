@@ -113,3 +113,13 @@ li {
 .main_content .main_item .img_content {
   padding: 10px;
 }
+
+/* Contact */
+.contact-element {
+	padding: 1em;
+}
+
+#contact-footer {
+	padding: 2em;
+	font-size: 12pt;
+}

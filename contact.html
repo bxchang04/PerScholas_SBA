@@ -1,17 +1,40 @@
+<!DOCTYPE html>
+
 <html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet"
+			type="text/css"
+			href="./style/style.css">
+	</head>
   <body>
-    <img class="contact" style="width: 10em;" src="https://media.giphy.com/media/MEjG5NXKKS68LvGIP2/giphy.gif"> 
-    <div> GIF courtesy of Giphy.com</div>>
+    <img
+      class="contact_img"
+      style="width: 10em; padding: 2em;"
+      src="https://media.giphy.com/media/MEjG5NXKKS68LvGIP2/giphy.gif"
+    />
+
+    <form class="contact-form contact-element">
+      <div class="dropdown contact-element">
+        <label for="inquiry">Choose one:</label>
+        <select name="inquiry" id="inquiry">
+          <option value="siteQuestion">Question about site</option>
+          <option value="general">General question/comment</option>
+          <option value="bug">Report a bug</option>
+        </select>
+      </div>
+      <div class="contact-element">
+        <textarea rows="4" cols="50" placeholder="(Maximum 150 characters)"></textarea>
+      </div>
+      <div class="contact-element">
+        <button id="contact-form-submit1" type="test" value="test" onclick="promptTY(e)">Submit</button>
+
+      </div>
+    </form>
+
+    <div id="contact-footer">GIF courtesy of Giphy.com</div>
+    <script type="text/javascript" src="./js/contact.js"></script>
   </body>
 </html>
 
-internal CSS
-
-dropdown
-
-regex
-
-add a GIF here
-
-(opt. add animation)
-
+internal CSS dropdown regex add a GIF here (opt. add animation)
