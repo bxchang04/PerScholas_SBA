@@ -1,8 +1,11 @@
 html,
 body {
   margin: 0;
-  padding: 0;
   font-family: Gill Sans, sans-serif;
+}
+
+body .menu-container {
+  padding-left: 0;
 }
 
 h1,
@@ -14,10 +17,16 @@ li {
   list-style-type: none;
 }
 
+th {
+  text-align: left;
+}
 /* Menu */
+
 .menu_container {
   display: flex;
-  padding: 20px;
+  /* position: absolute; */
+  width: 100%;
+  /* padding: 20px; */
   background-color: #1c1808;
   font-weight: 300;
   color: white;
@@ -115,8 +124,13 @@ li {
 }
 
 /* Contact */
-.contact-element {
-	padding: 1em;
+.main-element {
+	padding: 2em;
+}
+
+/* Challenges */
+.challenge-content {
+  padding: 2em;
 }
 
 /* The animation code */
@@ -135,4 +149,8 @@ li {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: normal; 
+}
+
+#challenge-submit1 {
+  margin: 2em
 }

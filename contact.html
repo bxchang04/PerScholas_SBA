@@ -8,14 +8,40 @@
 			href="./style/style.css">
 	</head>
   <body>
-    <img
-      id="contact-img1"
-      class="contact_img contact-element"
-      src="https://media.giphy.com/media/MEjG5NXKKS68LvGIP2/giphy.gif"
-    />
-
-    <form class="contact-form contact-element">
-      <div class="dropdown contact-element">
+    <!-- Nav Bar -->
+		<div class="menu_container">
+      <div class="menu_item">
+        <img src="./img/logo.png" href="./index.html" style="width: 5em;">
+			</div>
+			<div class="menu_item" id="menu_item_nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+						</li>
+						<li>
+              <a href="./challenges.html">Coding Challenges</a>
+						</li>
+						<li>
+              <a href="./resources.html">Resources</a>
+						</li>
+						<li>
+              <a href="./contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- Nav Bar -->
+    
+    <form class="contact-form main-element">
+      <h1>Contact Us</h1>
+      <img
+        id="contact-img1"
+        class="contact_img contact-element"
+        src="https://media.giphy.com/media/MEjG5NXKKS68LvGIP2/giphy.gif"
+      />
+      <div class="dropdown">
         <label for="inquiry">Choose one:</label>
         <select name="inquiry" id="inquiry">
           <option value="siteQuestion">Question about site</option>
@@ -23,16 +49,15 @@
           <option value="bug">Report a bug</option>
         </select>
       </div>
-      <div class="contact-element">
+      <div class="main-element">
         <textarea rows="4" cols="50" placeholder="(Maximum 150 characters)"></textarea>
       </div>
-      <div class="contact-element">
-         <input type="submit" value="Submit" onclick="alert('Thank you for your inquiry!')">
-
+      <input style="margin: 0 0 2em 2em" type="submit" value="Submit" onclick="alert('Thank you for your inquiry!')">
+      <div>
       </div>
     </form>
 
-    <div class="contact-element">GIF courtesy of Giphy.com</div>
+    <div class="main-element">GIF courtesy of Giphy.com</div>
     <script type="text/javascript" src="./js/contact.js"></script>
   </body>
 </html>
