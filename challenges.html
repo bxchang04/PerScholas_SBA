@@ -46,51 +46,26 @@
 
     <div class="challenge-content">
       <h1>Challenge #1: Answer the following questions</h1>
-      <!-- https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit/19454378#:~:text=One%20great%20way%20to%20prevent,false%20with%20your%20onsubmit%20attribute. -->
 
-      <!--https://www.geeksforgeeks.org/how-to-solve-submit-is-not-a-function-error-in-javascript/-->
-
-      <!-- <form onsubmit="submitAnswers();return false"> -->
-      <form onsubmit="submitAnswers();return false">
-        <table class="table table-bordered table-responsive">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">
-                Questions: According to the home page of this site...
-              </th>
-              <th scope="col">Your Answer</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>
-                ...the first important skill for coders is:
-              </td>
-              <td>
-                <input placeholder="1" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>...the sercond important skill for coders is:</td>
-              <td>
-                <input placeholder="1" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>...the third important skill for coders is:</td>
-              <td>
-                <input placeholder="1" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <form id="form1">
+        <div>
+          According to the home page of this site...
+        </div>
+        <div>
+          ...the first important skill for coders is:
+          <input type="text" id="answer1" />
+        </div>
+        <div>
+          ...the second important skill for coders is:
+          <input type="text" id="answer2" />
+        </div>
+        <div>
+          ...the third important skill for coders is:
+          <input type="text" id="answer3" />
+        </div>
+        <div id="feedback"></div>
+        <input id="challenge-submit1" type="submit" value="Submit" />
       </form>
-
-      <input id="challenge-submit1" type="button" value="Submit" />
 
       <div id="challenge-results1">
         <h2>Results to Challenge #1:</h2>
