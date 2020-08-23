@@ -5,8 +5,9 @@ Level 0
   // Multi line
   // Staggered line
   
-// Alt+Shift+F
+// Format all - Alt+Shift+F
 
 // Tab
 
-  // Editor left right
+  // Editor left right 
+
