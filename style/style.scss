@@ -1,5 +1,4 @@
-/* converted to CSS using https://www.sassmeister.com/ */
-
+/* converted from SCSS using https://www.sassmeister.com/ */
 html,
 body {
   margin: 0;
@@ -20,49 +19,29 @@ th {
 }
 
 /* Menu */
-%flex-shared {
-  display: flex;
-}
-
-.menu_container {
-  @extend %flex-shared;
-  /* display: flex; */
-  /* position: absolute; */
-  width: 100%;
-  /* padding: 20px; */
-  background-color: #1c1808;
-  font-weight: 300;
-  color: white;
-  align-items: center; /* not working for vertical */
-}
-
 .menu_item {
   flex: 1;
 }
-#menu_item_nav {
-  /* addition */
-  flex: 2;
-}
 
+.menu_container {
+  display: flex;
+  width: 100%;
+  background-color: #1c1808;
+  font-weight: 300;
+  color: white;
+  align-items: center;
+}
 .menu_container .menu_item nav ul {
-  float: right; /* anchors to right. How come justify-items didn't work? */
-  display: flex; /* fixed weird flex text issues */
-  text-align: center;
-  align-items: center; /* not working for vertical */
-  justify-items: right;
-  height: 4em;
+  display: flex;
 }
 .menu_container .menu_item nav ul li {
   height: 100%;
 }
-
 .menu_container .menu_item nav ul li a {
-  color: white;
   padding: 0.5em 3em;
   border-radius: 3px;
-  height: 100%;
+  text-decoration: none;
 }
-
 .menu_container .menu_item nav ul li a:hover {
   background-color: #becccf;
   color: #1c1808;
@@ -128,14 +107,24 @@ th {
   padding: 10px;
 }
 
-/* Contact */
+.challenge-content,
 .main-element {
   padding: 2em;
 }
 
+#menu_item_nav {
+  /* addition */
+  flex: 2;
+}
+
+/* Contact */
+.main-element {
+  /* padding: 2em; */
+}
+
 /* Challenges */
 .challenge-content {
-  padding: 2em;
+  /* padding: 2em; */
 }
 
 /* The animation code */
@@ -150,7 +139,6 @@ th {
     left: 0px;
   }
 }
-
 /* The element to apply the animation to */
 #contact-img1 {
   width: 10em;

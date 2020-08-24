@@ -1,4 +1,9 @@
 /* converted from SCSS using https://www.sassmeister.com/ */
+
+$primary-color: black;
+$secondary-color: white;
+$background-color-hover: #becccf;
+
 html,
 body {
   margin: 0;
@@ -28,23 +33,27 @@ th {
   width: 100%;
   background-color: #1c1808;
   font-weight: 300;
-  color: white;
+  color: $secondary-color;
   align-items: center;
-}
-.menu_container .menu_item nav ul {
-  display: flex;
-}
-.menu_container .menu_item nav ul li {
-  height: 100%;
-}
-.menu_container .menu_item nav ul li a {
-  padding: 0.5em 3em;
-  border-radius: 3px;
-  text-decoration: none;
-}
-.menu_container .menu_item nav ul li a:hover {
-  background-color: #becccf;
-  color: #1c1808;
+
+  .menu_item nav ul {
+    display: flex;
+
+    li {
+      height: 100%;
+
+      a {
+        padding: 0.5em 3em;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: $background-color-hover;
+        color: #1c1808;
+      }
+    }
+  }
 }
 
 /* Title */
@@ -107,8 +116,7 @@ th {
   padding: 10px;
 }
 
-.challenge-content,
-.main-element {
+%pad2ems {
   padding: 2em;
 }
 
@@ -119,11 +127,13 @@ th {
 
 /* Contact */
 .main-element {
+  @extend %pad2ems;
   /* padding: 2em; */
 }
 
 /* Challenges */
 .challenge-content {
+  @extend %pad2ems;
   /* padding: 2em; */
 }
 
